@@ -4,7 +4,11 @@ SGUI is a lightweight and customizable JavaScript library for creating custom gr
 ## Installation
 To use SGUI, you can include the library in your HTML file using a script tag:
 ```html
-<script src="https://raw.githubusercontent.com/Cintill/SGUI/main/sgui.js"></script>
+<script src="https://raw.githubusercontent.com/Cintill/SGUI/main/sGUI.js"></script>
+```
+If you use SGUI for making bookmarklets, consider the following code:
+```js
+javascript:(function () { var script = document.createElement('script'); script.src='https://raw.githubusercontent.com/Cintill/SGUI/main/sGUI.js'; document.body.appendChild(script); script.onload = yourCode() })();function yourCode() { your code here! }
 ```
 ## Usage
 To create a new SGUI element, you can use the following syntax:
